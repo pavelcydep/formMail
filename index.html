@@ -1,0 +1,51 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="./assets/popup/popup.css"/>
+  
+   
+</head>
+<body>
+<div class="popup__registration">
+    <div class="popup__content">
+      <img src="" alt="" class="popup__close">
+      <h3 class="popup__title">Обратная связь</h3>
+      <form class="popup__form-registration">
+        <h4 class="popup__title-input">Имя</h4>
+        <span class="error"></span>
+        <input type="name" id="name" name="name" placeholder="Введите имя" class="popup__input" >
+        <span class="error"></span>
+        <h4 class="popup__title-input">Телефон</h4>
+        <input type="phone" id="phone" name="phone" placeholder="Введите номер телефона" pattern="^\+?[\s\-\(\)0-9]{7,19}$" class="popup__input password" >
+        <span  id="error" class="error"></span>
+        <h4 class="popup__title-input">Email</h4>
+        <input type="email" id="email" name="email" placeholder="Введите почту" class="popup__input" >
+
+        <span class="error"></span>
+        <span class="error error__response"></span>
+        <button type="button" id="button" name="button" class="button popup__button-registration">Отправить</button>
+      
+      </form>
+      
+    </div>
+  </div>
+ 
+
+
+  <div  class="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+       <div class="modal-body">    
+          <p>Сообщение успешно отправлено</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/formMail.js"></script>
+</body>
